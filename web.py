@@ -14,8 +14,8 @@ async def get_transcript(guild_id: str, channel_id: str):
     html_content = open(html_path, "r", encoding="utf-8").read()
 
     download_script = """
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <button onclick="downloadPDF()">Download PDF</button>
     <script>
     function downloadPDF(){
@@ -30,3 +30,4 @@ async def get_transcript(guild_id: str, channel_id: str):
     </script>
     """
     return HTMLResponse(html_content + download_script)
+
