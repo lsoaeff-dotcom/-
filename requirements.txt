@@ -1,2 +1,9 @@
-flask
-requests
+nextcord
+chat-exporter
+fastapi
+uvicorn
+jinja2
+python-multipart
+html2canvas
+jsPDF
+playwright
