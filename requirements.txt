@@ -4,6 +4,4 @@ fastapi
 uvicorn
 jinja2
 python-multipart
-html2canvas
-jsPDF
 playwright
